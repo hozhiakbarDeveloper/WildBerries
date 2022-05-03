@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f2f5;
+}
+
+.login_container {
+    width: 330px;
+    display: flex;
+    padding: 20px;  
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+}
+
+.login_container input {
+    padding: 14px 18px;
+    margin: 5px 0px;
+    font-size: 14px;
+    border: 1px solid #dddfe2;
+    outline: none;
+    font-size: 17px;
+    border-radius: 6px;
+}
+
+.login_container hr {
+    margin: 10px 0px;
+}
+
+.login_container button {
+    background-color: #1877f2;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.login_container button:active {
+    background-color: #4267b2;
+}
+
+
+.register_container  {
+    width: 330px;
+    display: flex;
+    padding: 20px;  
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+}
+
+.register_container input {
+    padding: 14px 18px;
+    margin: 5px 0px;
+    font-size: 14px;
+    border: 1px solid #dddfe2;
+    outline: none;
+    font-size: 17px;
+    border-radius: 6px;
+}
+
+.register_container hr {
+    margin: 10px 0px;
+}
+
+#register {
+    margin-top: 10px;
+    background-color: #1877f2;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+#register:disabled, #auth:disabled {
+    background-color: #d3e0f0;
+    cursor: not-allowed;
+}
+
+.register_container button:active {
+    background-color: #4267b2;
+}
+
+/* errors */
+.errors {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.errors span{
+    color: #ff3333;
+    margin-bottom: 6px;
+}
